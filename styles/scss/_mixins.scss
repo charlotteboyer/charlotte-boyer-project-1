@@ -1,0 +1,6 @@
+@mixin headerFont($fontSize:30px, $color:darkcyan) {
+    font-weight: 700;
+    color: $color;
+    font-size: $fontSize;
+    
+}
