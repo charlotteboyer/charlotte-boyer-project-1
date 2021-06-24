@@ -1,33 +1,36 @@
 @import 'setup';
 @import 'variables';
-@import 'mixins';
-
+// @import 'mixins';
 
 
 body {
-    background: $junoRed;
-    color: blue;
+    font-family: $fontJosefin;
 }
 
-h2 {
-    @include headerFont();
-}
+// body {
+//     background: $junoRed;
+//     color: blue;
+// }
 
-h3 {
-    @include headerFont(100px, purple);
-}
+// h2 {
+//     @include headerFont();
+// }
+
+// h3 {
+//     @include headerFont(100px, purple);
+// }
 
 
-nav {
-    background: skyblue;
-    ul {
-        padding: 0;
-        margin: 0;
-        li {
-            a {
-                color: white;
-            }
-        }
-    }
-}
+// nav {
+//     background: skyblue;
+//     ul {
+//         padding: 0;
+//         margin: 0;
+//         li {
+//             a {
+//                 color: white;
+//             }
+//         }
+//     }
+// }
 

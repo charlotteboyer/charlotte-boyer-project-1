@@ -1,6 +1,63 @@
-@mixin headerFont($fontSize:30px, $color:darkcyan) {
+@import 'variables';
+
+// @mixin headerFont($fontSize:30px, $color:darkcyan) {
+//     font-weight: 700;
+//     color: $color;
+//     font-size: $fontSize;
+    
+// }
+
+@mixin header1Text(){
+    font-family: $fontJosefin ;
+    font-weight: 600;
+    font-size: 6.9rem; 
+}
+
+@mixin header2White(){
+    font-family: $fontJosefin;
+    font-size: 4.5px;
+    line-height: 99.8px;
+}
+
+@mixin header2Yellow() {
+    font-family: $fontJosefin;
+    font-size: 4.5px;
+    line-height: 99.8px;
+    color: $sunflowerYellow;
+}
+
+@mixin header3Text() {
+    font-family: $fontJosefin;
+    font-size: 4rem;
+    line-height: 58px;
+    letter-spacing: 1.3px;
+}
+
+@mixin header4Text() {
+    font-family: $fontJosefin;
+    font-size: 2.5rem;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+
+@mixin buttonsText {
+    font-family: $fontJosefin;
+    font-size: 2.24rem;
+    text-align: center;
+    line-height: 41.6px;
+}
+
+@mixin navText {
+    font-family: $fontJosefin;
     font-weight: 700;
-    color: $color;
-    font-size: $fontSize;
+    font-size: 2.9rem;
+    letter-spacing: 1px;
+}
+
+@mixin bodyText {
+    font-family: $fontBarlow;
+    font-size: 2.8rem;
+    line-height: 28px;
+    letter-spacing: 1px;
     
 }

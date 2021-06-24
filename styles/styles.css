@@ -236,29 +236,5 @@ html {
 }
 
 body {
-  background: #ea693e;
-  color: blue;
-}
-
-h2 {
-  font-weight: 700;
-  color: darkcyan;
-  font-size: 30px;
-}
-
-h3 {
-  font-weight: 700;
-  color: purple;
-  font-size: 100px;
-}
-
-nav {
-  background: skyblue;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav ul li a {
-  color: white;
+  font-family: "Josefin Sans", sans-serif;
 }
