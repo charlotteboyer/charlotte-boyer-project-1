@@ -20,15 +20,91 @@
         padding: 0;
         }
     }
-    .contactForm {
-        background-color: $almostBlack;
+
+    // left side styles
+    .contactContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
     }
 
-    .contactFirstRow input,
-    .contactForm textarea {
-        background-color: $almostBlack;
+    .leftSideContact {
+        background-color: $pine;
+        padding-top: 50%;
+        @include bodyText();
+        ul {
+            list-style-type: none;
+            padding: 10px 0;
+        }
+        aside {
+            background-color: $pine;
+        }
     }
+
+    .leftSideContact ul li:nth-child(2) {
+        padding-top: 20px;
+    }
+
+    .contactIcons {
+        color: $sunflowerYellow;
+        font-size: 3rem;
+        i {
+            padding-right: 10px;
+        }
+    }
+
+    // FORM STYLES //
+    .contactForm {
+    margin-left: 5%;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     
+    position: relative;
+    top: -15%;
+    right: 0; 
+
+    background-color: $almostBlack;
+    width: 65%;
+    box-shadow: 25px 25px $sunflowerYellow;
+}
+
+    .contactForm button {
+    @include buttonsText();
+    padding: 5px;
+    margin: 5% 0;
+    border: none;
+    background-color: $sunflowerYellow;
+}
+    
+    .contactForm input {
+    background-color: $almostBlack;
+    border: none;
+    border-bottom: 3px solid $sunflowerYellow;
+}
+
+    .contactForm textarea {
+    margin-top: 5%;
+    background-color: $almostBlack;
+    border: 3px solid $sunflowerYellow;
+    @include bodyText();
+    padding: 25px 25px;
+    
+}
+
+
+
+
+
+    
+
+    
+    
+
 
 
 
