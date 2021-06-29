@@ -1,12 +1,86 @@
-
+@import 'variables';
+@import 'mixins';
+@import 'setup';
 
 @media (max-width: 940px) {
+
+
+    //contact//
+
+
 }
 
 
 @media(max-width:768px) {
 
+    //blog 
+
+
+    //form stylings//
+    .labelContainers {
+        flex-direction: column;
+    }
+
+    .contactForm label[for="email"] {
+        padding-top: 15px;
+    }
+
+    //contact//
+
+    .headerNav {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        h1 {
+            font-size: 4.9rem;
+            padding-top: 25px;
+            }
+        ul {
+            justify-content: center;
+        }
+    }
+
+    .contactContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .leftSideContact {
+        padding: 0; 
+         ul {
+             text-align: center;
+         }
+    }
+
+    .contactIcons {
+        text-align: center;
+    }
+
+    .contactForm {
+        top:-50px; 
+        width: 90%;
+    }
 }
 
 @media(max-width: 480px) {
+
+
+
+    //contact// 
+    
+    .headerNav h1{
+        font-size: 3.9rem;
+        padding-top: 25px;
+    }
+    .contactForm {
+        box-shadow: none;
+    }
+
+
 }
+

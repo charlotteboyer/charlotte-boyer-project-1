@@ -23,8 +23,9 @@
 }
 
 
-main {
+.blogMain {
     display: flex;
+    flex-direction: row;
 }
 
 .leftColumn {
