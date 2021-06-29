@@ -17,29 +17,41 @@
 
 @mixin header2White() {
     font-family: $fontJosefin;
-    font-size: 4.5px;
+    font-size: 4.5rem;
+    font-weight: 400;
     line-height: 99.8px;
+    color: white;
+    text-transform: uppercase;
 }
 
 @mixin header2Yellow() {
     font-family: $fontJosefin;
-    font-size: 4.5px;
+    font-size: 4.5rem;
+    font-weight: 400;
     line-height: 99.8px;
     color: $sunflowerYellow;
+    text-transform: uppercase;
 }
 
 @mixin header3Text() {
     font-family: $fontJosefin;
     font-size: 4rem;
+    font-weight: 400;
     line-height: 58px;
     letter-spacing: 1.3px;
+    color: white;
+    text-transform: uppercase;
 }
 
 @mixin header4Text() {
     font-family: $fontJosefin;
     font-size: 2.5rem;
+    font-weight: 400;
     line-height: 58px;
     letter-spacing: 0.8px;
+    color: $sunflowerYellow;
+    text-transform: uppercase;
+
 }
 
 @mixin buttonsText {
@@ -47,6 +59,8 @@
     font-size: 2.24rem;
     text-align: center;
     line-height: 41.6px;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
 @mixin navText {
@@ -60,8 +74,9 @@
 
 @mixin bodyText {
     font-family: $fontBarlow;
-    font-size: 2.8rem;
+    font-size: 2rem;
     line-height: 28px;
     letter-spacing: 1px;
+    color: white;
     
 }

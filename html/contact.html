@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <header>
+        <header class="headerNav">
             <nav class="contactNav">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -26,14 +26,22 @@
         </header>
         <main>
             <div class="wrapper">
-                <form action="">
-                    <label for="text">Name</label>
-                    <input type="text">
-                    <label for="email">Email</label>
-                    <input type="email">
-                    <label for="comment">Comment</label>
-                    <input type="text" name="comment" id="comment">
-                    <button type="submit">Submit</button>
+                <form action="" class="blogForm contactForm">
+                    <div class="firstRow contactFirstRow">
+                        <div class="labelContainers">
+                            <div class="labelContainer1">
+                                <label for="text">Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="labelContainer2">
+                                <label for="email">Email</label>
+                                <input type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <label for="comment" class="sr-only">Comment</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
+                    <button type="submit">Post Comment</button>
                 </form>
                 <aside>
                     <div class="contactIcons">

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="blogHeader">
         <nav class="blogNav">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -26,20 +26,18 @@
     </header>
 
     <main>
-        <section>
-            <div class="imageBlog">
-                <img src="../assets/blog-post-image.jpg" alt="a server setting up tables in a restaurant">
-            </div>
+        <div class="leftColumn">
             <aside>
                 <div class="sideImage">
                     <img src="../assets/blog-side-image.jpg" alt="a salmon fillet on a bed of veggies and sauce">
                 </div>
-                <div class="featuredRestaurants">
-                    <h3>Featured Restaurants</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem vitae ipsa labore. Commodi dolore quis quaerat. Find out more.</p>
+                <div class="featuredRestaurants wrapper">
+                    <h4>Featured Restaurants</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem vitae ipsa labore. Commodi dolore
+                        quis quaerat. Find out more.</p>
                 </div>
-                <div class="recentPosts">
-                    <h3>Recent Posts</h3>
+                <div class="recentPosts wrapper">
+                    <h4>Recent Posts</h3>
                     <ul>
                         <li>Lorem, ipsum dolor sit.</li>
                         <li>amet consectetur adipisicing elit</li>
@@ -48,50 +46,70 @@
                     </ul>
                 </div>
             </aside>
-            <article>
-                <div class="wrapper">
-                    <h2>Employment Opportunities</h2>
-                    <p>Monday October 30, 2019 by Sulaire</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, rem quasi! Ad incidunt deleniti perspiciatis! Dicta non est doloribus distinctio numquam, repellendus, cumque unde, sit saepe ex in id accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias veritatis quod. Odio itaque temporibus alias eos. Repellendus, quo ipsam voluptate saepe asperiores facilis voluptatum. Impedit, quam sequi. Quidem, est?</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam voluptas maxime praesentium eveniet dolore aspernatur error saepe sapiente molestiae dolor. 
-                    </p>
-                    <p>
-                        Temporibus perferendis exercitationem consequatur reprehenderit dolores, ut quos voluptatem.
-                    </p>        
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <div class="wrapper">
-
-                <h3>Comments</h3>
-                <div class="comment1">
-                    <div>
-                        <img src="../assets/comment-1.jpg" alt="a photo of the commenter">
+        </div>
+        <div class="rightColumn">
+            <section>
+                <div class="blogBoxBorder">
+                    <div class="imageBlog">
+                        <img src="../assets/blog-post-image.jpg" alt="a server setting up tables in a restaurant">
                     </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi delectus atque velit dolores, perferendis hic dicta quasi veniam ipsa quis inventore cum amet at, quam architecto, voluptas fugiat itaque ut!</p>
+                    <article class="employment">
+                        <h2>Employment Opportunities</h2>
+                        <p class="date">Monday October 30, 2019 by Sulaire</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, rem quasi! Ad incidunt deleniti perspiciatis! Dicta non est doloribus distinctio numquam, repellendus, cumque unde, sit saepe ex in id accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias veritatis quod. Odio itaque temporibus alias eos. Repellendus, quo ipsam voluptate saepe asperiores facilis voluptatum. Impedit, quam sequi. Quidem, est?</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam voluptas maxime praesentium eveniet dolore aspernatur error saepe sapiente molestiae dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat minima labore expedita voluptatum sed ad cum reprehenderit magni ab corrupti dolores ducimus dolor perferendis, architecto quisquam a officia maxime eaque?
+                        </p>
+                        <p>
+                            Temporibus perferendis exercitationem consequatur reprehenderit dolores, ut quos voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos dignissimos nobis voluptate! Laborum quia aperiam quae sint vel. Molestias minima nemo nihil adipisci culpa doloremque voluptatem, laborum esse repudiandae?
+                        </p>   
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quisquam mollitia debitis perferendis earum, laboriosam, corrupti magni numquam magnam aliquid officiis iste reiciendis illum ratione tempora optio quidem possimus placeat?
+                        </p>     
+                    </article>
                 </div>
-                <div class="comment2">
-                    <div class="commenter2">
-                        <img src="../assets/comment-2.jpg" alt="a photo of the commenter">
+            </section>
+    
+            <section>
+                <div class="comments wrapper">
+                    <h3>Comments:</h3>
+                    <div class="comment1 comment">
+                        <div class="comment1Image commentImage">
+                            <img src="../assets/comment-1.jpg" alt="a photo of the commenter">
+                        </div>
+                        <div class="comment1Words commentWords">
+                            <p>Tuesday October 9th, 2019 by Ali</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi delectus atque velit dolores, perferendis hic dicta quasi veniam ipsa quis inventore cum amet at, quam architecto, voluptas fugiat itaque ut!</p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ratione aliquam atque ipsa omnis ullam libero nobis consequatur. Quas ipsam deserunt vel rem suscipit odio sapiente dolorem autem! Nostrum, tempore.</p>
+                    <div class="comment2 comment">
+                        <div class="comment2Image commentImage">
+                            <img src="../assets/comment-2.jpg" alt="a photo of the commenter">
+                        </div>
+                        <div class="comment2Words commentWords">
+                            <p>Wednesday October 10th, 2019 by Lisa<p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ratione aliquam atque ipsa omnis ullam libero nobis consequatur. Quas ipsam deserunt vel rem suscipit odio sapiente dolorem autem! Nostrum, tempore.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <div class="wrapper"> 
-            <form action="">
-                <label for="text">Name</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="comment">Comment</label>
-                <input type="text" name="comment" id="comment">
+            </section>
+            <form action="" class="blogForm">
+                <div class="firstRow">
+                    <div class="labelContainers">
+                        <div class="labelContainer1">
+                            <label for="text">Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="labelContainer2">
+                            <label for="email">Email</label>
+                            <input type="email">
+                        </div>
+                    </div>
+                </div>
+                <label for="comment" class="sr-only">Comment</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
                 <button type="submit">Post Comment</button>
             </form>
-        </div>
     </main>
     <footer>
         <p>Copyright @ Juno College</p>

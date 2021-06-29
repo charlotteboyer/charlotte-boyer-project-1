@@ -39,6 +39,10 @@ h1 {
     @include header1Text();
 }
 
+p {
+    @include bodyText();
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -60,6 +64,16 @@ nav li a {
     text-decoration: none;
 }
 
+.indexHeader, 
+.blogHeader {
+    background-repeat: no-repeat;
+}
+
+.indexHeader ul li:first-child,
+.blogNav ul li:nth-child(3),
+.contactNav ul li:nth-child(4){
+    border-bottom: 2px solid $sunflowerYellow;
+}
 
 
 // body {

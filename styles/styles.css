@@ -479,10 +479,6 @@ html {
   background-size: cover;
 }
 
-.indexHeader ul li:first-child {
-  border-bottom: 2px solid #FFD300;
-}
-
 span.restaurant {
   background-color: white;
   color: black;
@@ -491,8 +487,8 @@ span.restaurant {
 .floatingPhoto {
   width: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
 }
 
 .indexHeaderContainer {
@@ -507,6 +503,235 @@ span.restaurant {
   padding: 5% 0 0 5%;
 }
 
+.indexNav li {
+  margin: 30px 30px 0 0;
+  padding: 0;
+}
+
+.about {
+  padding: 20% 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutPoints {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutPoints h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 99.8px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.icon {
+  background-color: #FFD300;
+  font-size: 4.5rem;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  border-radius: 50%;
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.locationWords, .communityWords {
+  padding-bottom: 10%;
+}
+
+.foodSection {
+  background-color: #171B0E;
+  position: relative;
+}
+
+.foodColumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.column {
+  margin: 0 auto;
+  height: 50vh;
+  width: 50%;
+}
+.column h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  color: white;
+  text-transform: uppercase;
+}
+.column a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.24rem;
+  text-align: center;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: black;
+  background-color: #FFD300;
+}
+
+.burgerPhotoColumn, .hummusPhotoColumn {
+  background-color: #171B0E;
+}
+
+.photoDiv {
+  position: relative;
+  width: 75%;
+}
+
+.burgerPhoto img {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  -webkit-box-shadow: 25px 25px #FFD300;
+          box-shadow: 25px 25px #FFD300;
+}
+
+.hummusPhoto img {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  -webkit-box-shadow: -25px -25px #FFD300;
+          box-shadow: -25px -25px #FFD300;
+}
+
+.burgerText, .newText {
+  padding: 50px 0 0 25px;
+}
+
+.giftCard {
+  padding: 10% 0;
+  text-align: center;
+}
+.giftCard h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 99.8px;
+  color: #FFD300;
+  text-transform: uppercase;
+}
+.giftCard p {
+  text-align: left;
+  margin: 0 5% 5% 0;
+}
+.giftCard a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.24rem;
+  text-align: center;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+}
+
+.indexBanner {
+  background-image: url(.././assets/banner.jpg);
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10%;
+}
+.nature h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 99.8px;
+  color: #FFD300;
+  text-transform: uppercase;
+}
+.nature p {
+  padding-bottom: 15px;
+}
+.nature a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.24rem;
+  text-align: center;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.natureImageContainer {
+  width: 30%;
+}
+
+.natureImage {
+  width: 80%;
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
+}
+
+.natureText {
+  width: 70%;
+}
+
+.gallerySection {
+  background-color: #171B0E;
+  padding: 10% 0;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery div {
+  width: calc(100% / 3);
+  padding-right: 30px;
+}
+
+.bowlsImage {
+  padding: 0;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -744,6 +969,34 @@ html {
   overflow: hidden;
 }
 
+.headerNav {
+  background: url(.././assets/contact-header.jpg);
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.headerNav h1 {
+  margin-top: 5%;
+}
+.headerNav nav {
+  max-width: 30%;
+}
+.headerNav li {
+  margin: 30px 30px 0 0;
+  padding: 0;
+}
+
+.contactForm {
+  background-color: #171B0E;
+}
+
+.contactFirstRow input,
+.contactForm textarea {
+  background-color: #171B0E;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -979,6 +1232,266 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.blogHeader {
+  background: url(./../assets/blog-header.jpg);
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.blogHeader h1 {
+  margin-top: 5%;
+}
+.blogHeader nav {
+  max-width: 30%;
+}
+
+.blogNav li {
+  margin: 30px 30px 0 0;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leftColumn {
+  width: 35%;
+}
+
+.rightColumn {
+  width: 65%;
+}
+
+.blogBoxBorder {
+  width: 100%;
+  position: relative;
+  margin-left: 5px;
+  border-left: 5px solid #FFD300;
+  border-bottom: 5px solid #FFD300;
+}
+
+.imageBlog {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  margin-left: 25px;
+}
+
+.imageBlog img {
+  display: block;
+  -webkit-box-shadow: -30px 30px #FFD300;
+          box-shadow: -30px 30px #FFD300;
+}
+
+article {
+  padding-top: 60%;
+}
+
+.employment {
+  padding-left: 10%;
+}
+.employment h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 99.8px;
+  color: #FFD300;
+  text-transform: uppercase;
+}
+.employment p {
+  padding-bottom: 10px;
+}
+
+.date {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.comments {
+  padding: 5%;
+}
+.comments h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.commentImage {
+  width: 20%;
+}
+
+.commentImage img {
+  width: 100%;
+}
+
+.commentWords {
+  width: 75%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.commentWords p:first-child {
+  font-weight: 900;
+  color: #FFD300;
+  text-transform: uppercase;
+}
+
+.sideImage {
+  position: relative;
+  right: 25px;
+  bottom: 25px;
+}
+
+aside {
+  margin: 25% 5%;
+  background-color: #171B0E;
+}
+aside h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+  color: #FFD300;
+  text-transform: uppercase;
+}
+aside ul {
+  padding-left: 10px;
+}
+aside ul li {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.blogForm {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blogForm button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.24rem;
+  text-align: center;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px;
+  padding: 5px;
+  margin: 5% 0;
+  border: none;
+  background-color: #FFD300;
+}
+
+label {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.firstRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.labelContainer1 {
+  margin-right: 20px;
+}
+
+.labelContainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.labelContainers label {
+  padding-left: 25px;
+}
+
+.labelContainer1,
+.labelContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.blogForm input {
+  background-color: #2B331B;
+  border: none;
+  border-bottom: 3px solid #FFD300;
+}
+
+.blogForm textarea {
+  margin-top: 5%;
+  background-color: #2B331B;
+  border: 3px solid #FFD300;
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: white;
+  padding: 25px 25px;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+textarea::placeholder {
+  opacity: 1;
 }
 
 html {
@@ -1017,6 +1530,14 @@ h1 {
   color: white;
 }
 
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: white;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -1044,4 +1565,15 @@ nav li a {
   letter-spacing: 1px;
   color: white;
   text-decoration: none;
+}
+
+.indexHeader,
+.blogHeader {
+  background-repeat: no-repeat;
+}
+
+.indexHeader ul li:first-child,
+.blogNav ul li:nth-child(3),
+.contactNav ul li:nth-child(4) {
+  border-bottom: 2px solid #FFD300;
 }

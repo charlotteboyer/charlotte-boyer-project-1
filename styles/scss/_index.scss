@@ -9,9 +9,6 @@
     background-size: cover;
 }
 
-.indexHeader ul li:first-child {
-    border-bottom: 2px solid $sunflowerYellow;
-}
 
 span.restaurant {
     background-color: white;
@@ -21,8 +18,8 @@ span.restaurant {
 .floatingPhoto {
     width: 50%;
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
 
 }
 
@@ -36,4 +33,190 @@ span.restaurant {
     padding: 5% 0 0 5%;
 }
 
+.indexNav li {
+    margin: 30px 30px 0 0;
+    padding: 0;
+}
 
+
+// ABOUT STYLINGS // 
+
+.about {
+    padding: 20% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutPoints {
+    width: 50%;
+    display: flex;
+    h2 {
+        @include header2White();
+    }
+}
+
+.icon {
+    background-color: $sunflowerYellow;
+    font-size: 4.5rem;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 50%;
+    margin-right: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationWords, .communityWords {
+    padding-bottom: 10%;
+}
+
+// FOOD SECTION STYLINGS 
+
+.foodSection {
+    background-color: $almostBlack;
+    position: relative;
+}
+
+.foodColumns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    margin: 0 auto;
+    height: 50vh;
+    width: 50%;
+    h3 {
+        @include header3Text();
+    }
+    a {
+        @include buttonsText();
+        color: black;
+        background-color: $sunflowerYellow;
+    }
+}
+
+.burgerPhotoColumn, .hummusPhotoColumn {
+    background-color: $almostBlack;
+}
+
+.photoDiv {
+    position: relative;
+    width: 75%;
+}
+
+.burgerPhoto img {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    box-shadow: 25px 25px $sunflowerYellow;
+}
+
+.hummusPhoto img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    box-shadow: -25px -25px $sunflowerYellow; 
+    
+}
+
+.burgerText, .newText {
+    padding: 50px 0 0 25px;
+}
+
+
+//win a giftcard sections//
+
+.giftCard {
+    padding: 10% 0;
+    text-align: center;
+    h2 {
+        @include header2Yellow;
+    }
+    p {
+        text-align: left;
+        margin: 0 5% 5% 0;
+    }
+    a {
+        @include buttonsText();
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+        
+    }
+}
+
+//banner image//
+
+.indexBanner {
+    background-image: url(.././assets/banner.jpg);
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+//Nature Spaces Section//
+
+.nature {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10%;
+    h2 {
+        @include header2Yellow 
+    }
+    p {
+        padding-bottom: 15px;
+    }
+    a {
+        @include buttonsText;
+        background-color: black;
+        color: white;
+    }
+}
+
+.natureImageContainer {
+    width: 30%;
+}
+
+.natureImage {
+    width: 80%;
+    box-shadow: -15px 15px  $sunflowerYellow;
+}
+
+.natureText {
+    width: 70%;
+}
+
+// GALLERY SECTION//
+.gallerySection {
+    background-color: $almostBlack;
+    padding: 10% 0; 
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gallery div {
+    width: calc(100% / 3);
+    padding-right: 30px;
+}
+
+.bowlsImage {
+    padding: 0;
+}
+
+//footer styles//
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
