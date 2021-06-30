@@ -12,150 +12,166 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/4fdcb3a418.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<header class="indexHeader">
-        <nav class="indexNav">
-            <button><i class="fas fa-bars"></i></button>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./html/blog.html">Blog</a></li>
-                <li><a href="./html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
 
-    <div class="indexHeaderContainer">
-        <h1>
-            The <span class="restaurant">Restaurant</span> Mall
-        </h1>
-        <div class="floatingPhoto">
-            <img src="./assets/home-box-header.png"
-                alt="A plated salad with onion rings on top. In the background there are four women seated at a table in a restaurant.">
-        </div>
-    </div>
+<!-- header html here  -->
+    <header class="indexHeader">
+            <nav class="indexNav">
+                <button><i class="fas fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./html/blog.html">Blog</a></li>
+                    <li><a href="./html/contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-
-</header>
-<main>
-
-<section>
-    <div class="wrapper about">
-        <div class="locationAbout aboutPoints">
-            <div class="locationIcon icon">
-                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-            </div>
-            <div class="aboutWords">
-                <h2>Location</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptatibus dicta a repellat, sed fuga corporis deserunt officia cum accusamus, sit repellendus! Quo voluptates inventore.</p>
+        <div class="indexHeaderContainer">
+            <h1>
+                The <span class="restaurant">Restaurant</span> Mall
+            </h1>
+            <div class="floatingPhoto">
+                <img src="./assets/home-box-header.png"
+                    alt="A plated salad with onion rings on top. In the background there are four women seated at a table in a restaurant.">
             </div>
         </div>
-        <div class="communityAbout aboutPoints">
-            <div class="communityIcon icon">
-                <a href="#"><i class="fas fa-users"></i></a>
+    </header>
+<!-- header html ends -->
+<!-- main html begins -->
+    <main>
+<!-- this is the first section I am calling it the "about section" -->
+        <section>
+            <div class="wrapper about">
+                <div class="locationAbout aboutPoints">
+                    <div class="locationIcon icon">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                    <div class="aboutWords">
+                        <h2>Location</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptatibus dicta a repellat, sed fuga corporis deserunt officia cum accusamus, sit repellendus! Quo voluptates inventore.</p>
+                    </div>
+                </div>
+                <div class="communityAbout aboutPoints">
+                    <div class="communityIcon icon">
+                        <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                    <div class="communityWords">
+                        <h2>Community</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit, eius quia, id fugit aperiam corporis libero, culpa repellat laboriosam labore quisquam aut eveniet.</p>
+                    </div>
+                </div>
+                <div class="blogAbout aboutPoints">
+                    <div class="blogIcon icon">
+                        <a href="./html/blog.html"><i class="fas fa-sticky-note"></i></a>
+                    </div>
+                    <div class="blogWords">
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo laborum nisi reiciendis voluptatibus accusamus aliquid praesentium id culpa aut! Repellendus beatae inventore voluptate vel velit.</p>
+                    </div>
+                    
+                </div>
+                <div class="contactAbout aboutPoints">
+                    <div class="contactIcon icon">
+                        <a href="./html/contact.html"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <div class="contactWords">
+                        <h2> Get In Touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus consequatur perferendis alias adipisci, illo facere laborum quos aliquid tempora esse eligendi, ipsam modi ipsa.</p>
+                    </div>
+                </div>
             </div>
-            <div class="communityWords">
-                <h2>Community</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit, eius quia, id fugit aperiam corporis libero, culpa repellat laboriosam labore quisquam aut eveniet.</p>
+        </section>
+<!-- end of first section -->
+
+<!-- second section begins - food in columns -->
+        <section class="foodSection">
+            <div class="foodColumns">
+                <div class="burgerPhotoColumn column">
+                    <div class="burgerPhoto photoDiv">
+                        <img src="./assets/left-image.jpg" alt="A burger with a side of french fries">
+                    </div>
+                </div>
+                <div class="burgerText column">
+                    <h3>Best Burgers</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum expedita facilis magni! Nesciunt optio error quia ea culpa consequuntur dolor ex quaerat doloremque fuga facere blanditiis expedita labore, accusamus ducimus!</p>
+                    <a href="./html/blog.html">Read More</a>
+                </div>
+                <div class="newText column">
+                    <h3>Try something new</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia autem eaque ullam asperiores aspernatur accusamus corporis sunt incidunt deleniti adipisci animi aliquid velit dolorem eveniet nihil, nobis unde! Deleniti.</p>
+                    <a href="./html/blog.html">Read More</a>
+                </div>
+                <div class="hummusPhotoColumn column">
+                    <div class="hummusPhoto photoDiv">
+                        <img src="./assets/right-image.jpg" alt="hummus with many multicolored garnishes, nuts, pomegranate seeds and tomatoes">
+                    </div>
+                </div>
+                
             </div>
-        </div>
-        <div class="blogAbout aboutPoints">
-            <div class="blogIcon icon">
-                <a href="./html/blog.html"><i class="fas fa-sticky-note"></i></a>
+        </section>
+<!-- second section ends -->
+
+<!-- third section begins - gift card section  -->
+        <section>
+            <div class="wrapper giftCard">
+                <h2>Win a $100 Gift Card</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat commodi ex sunt porro sapiente consequuntur soluta doloremque, suscipit facere numquam expedita explicabo facilis optio labore et perspiciatis. Molestiae, dolorem distinctio.</p>
+                <a href="#">Find Out More</a>
             </div>
-            <div class="blogWords">
-                <h2>Blog</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo laborum nisi reiciendis voluptatibus accusamus aliquid praesentium id culpa aut! Repellendus beatae inventore voluptate vel velit.</p>
+        </section>
+<!-- gift card section ends -->
+
+<!-- full bleed banner here -->
+        <section>
+            <div class="indexBanner">
+
             </div>
-            
-        </div>
-        <div class="contactAbout aboutPoints">
-            <div class="contactIcon icon">
-                <a href="./html/contact.html"><i class="fas fa-phone"></i></a>
+        </section>
+<!-- banner ends -->
+
+<!-- nature section begins -->
+        <section>
+            <div class="wrapper nature">
+                <div class="natureImageContainer">
+                    <div class="natureImage">
+                        <img src="./assets/square-image.jpg" alt="some people sitting at a restaurant filled with plants that has a glass ceiling ">
+                    </div>
+                </div>
+                <div class="natureText">
+                    <h2>Bringing Nature in Spaces</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sint nobis velit ut, unde sunt. Sunt dolorum qui quidem nulla soluta optio in ab? Vero blanditiis eligendi excepturi explicabo deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde ipsam ducimus quidem neque, enim quia porro nam quasi esse laboriosam dolor eaque quam, ullam vitae, voluptatibus ex iure doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum earum in illum. Id autem ducimus, sapiente, molestias ipsa corporis perferendis minima ad dolores omnis.</p>
+                    <a href="#">Find out More</a>
+                </div>
+            </div> 
+        </section>
+<!-- nature section ends -->
+
+<!-- gallery section begins -->
+        <section class="gallerySection">
+            <div class="wrapper gallery">
+                <div class="lightsImage galleryImage">
+                    <img src="./assets/gallery-image-1.jpg" alt="A black pipe with decorative lights hanging down from it. The pipe has ivy woven across it.">
+                </div>
+                <div class="takeawayImage galleryImage">
+                    <img src="./assets/gallery-image-2.jpg" alt="A light up pink sign on a window that says 'Take Away'">
+                </div>
+                <div class="bowlsImage galleryImage">
+                    <img src="./assets/gallery-image-3.jpg" alt="Korean food presented in different sized bowls. There are four white bowls and one black claypot bowl.">
+                </div>
             </div>
-            <div class="contactWords">
-                <h2> Get In Touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus consequatur perferendis alias adipisci, illo facere laborum quos aliquid tempora esse eligendi, ipsam modi ipsa.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
+<!-- gallery section ends -->
+    </main>
+<!-- main  ends -->
 
-<section class="foodSection">
-    <div class="foodColumns">
-        <div class="burgerPhotoColumn column">
-            <div class="burgerPhoto photoDiv">
-                <img src="./assets/left-image.jpg" alt="A burger with a side of french fries">
-            </div>
-        </div>
-        <div class="burgerText column">
-            <h3>Best Burgers</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum expedita facilis magni! Nesciunt optio error quia ea culpa consequuntur dolor ex quaerat doloremque fuga facere blanditiis expedita labore, accusamus ducimus!</p>
-            <a href="./html/blog.html">Read More</a>
-        </div>
-        <div class="newText column">
-            <h3>Try something new</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia autem eaque ullam asperiores aspernatur accusamus corporis sunt incidunt deleniti adipisci animi aliquid velit dolorem eveniet nihil, nobis unde! Deleniti.</p>
-            <a href="./html/blog.html">Read More</a>
-        </div>
-        <div class="hummusPhotoColumn column">
-            <div class="hummusPhoto photoDiv">
-                <img src="./assets/right-image.jpg" alt="hummus with many multicolored garnishes, nuts, pomegranate seeds and tomatoes">
-            </div>
-        </div>
-        
-    </div>
-</section>
-
-<section>
-    <div class="wrapper giftCard">
-        <h2>Win a $100 Gift Card</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat commodi ex sunt porro sapiente consequuntur soluta doloremque, suscipit facere numquam expedita explicabo facilis optio labore et perspiciatis. Molestiae, dolorem distinctio.</p>
-        <a href="#">Find Out More</a>
-    </div>
-</section>
-
-<section>
-    <div class="indexBanner">
-
-    </div>
-</section>
-
-<section>
-   <div class="wrapper nature">
-       <div class="natureImageContainer">
-           <div class="natureImage">
-               <img src="./assets/square-image.jpg" alt="some people sitting at a restaurant filled with plants that has a glass ceiling ">
-           </div>
-       </div>
-       <div class="natureText">
-           <h2>Bringing Nature in Spaces</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sint nobis velit ut, unde sunt. Sunt dolorum qui quidem nulla soluta optio in ab? Vero blanditiis eligendi excepturi explicabo deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde ipsam ducimus quidem neque, enim quia porro nam quasi esse laboriosam dolor eaque quam, ullam vitae, voluptatibus ex iure doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum earum in illum. Id autem ducimus, sapiente, molestias ipsa corporis perferendis minima ad dolores omnis.</p>
-           <a href="#">Find out More</a>
-       </div>
-   </div> 
-</section>
-
-<section class="gallerySection">
-    <div class="wrapper gallery">
-        <div class="lightsImage galleryImage">
-            <img src="./assets/gallery-image-1.jpg" alt="A black pipe with decorative lights hanging down from it. The pipe has ivy woven across it.">
-        </div>
-        <div class="takeawayImage galleryImage">
-            <img src="./assets/gallery-image-2.jpg" alt="A light up pink sign on a window that says 'Take Away'">
-        </div>
-        <div class="bowlsImage galleryImage">
-            <img src="./assets/gallery-image-3.jpg" alt="Korean food presented in different sized bowls. There are four white bowls and one black claypot bowl.">
-        </div>
-
-    </div>
-</section>
-
-
-</main>
+<!-- footer begins -->
 
 <footer>
     <p>Copyright @ Juno College</p>
 </footer>
+
+<!-- footer ends -->
     
 </body>
 </html>

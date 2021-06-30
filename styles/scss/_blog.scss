@@ -123,9 +123,8 @@ article {
         padding-bottom: 30px;
             li {
                 @include bodyText();  
+            }
         }
-
-    }
 }
 
     //blog form stylings & also some contact form stylings since they are similar //
@@ -206,5 +205,3 @@ input::placeholder {
 textarea::placeholder {
     opacity: 1;
 }
-
-

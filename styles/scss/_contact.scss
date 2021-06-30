@@ -2,6 +2,8 @@
 @import 'mixins';
 @import 'setup';
 
+// contact header styles
+
 .headerNav {
     background: url(.././assets/contact-header.jpg);
     width: 100%;
@@ -17,6 +19,7 @@
     }
 
     // left side styles
+    
     .contactContainer {
         display: flex;
         justify-content: center;
@@ -57,10 +60,6 @@
 
     // FORM STYLES //
 
-    fieldset {
-
-    }
-    
     .contactForm {
     margin-left: 5%;
     padding: 5%;
@@ -101,19 +100,3 @@
     padding: 25px 25px;
     
 }
-
-
-
-
-
-    
-
-    
-    
-
-
-
-
-// .contactBox form{
-//     background-color: $almostPine;
-// }
