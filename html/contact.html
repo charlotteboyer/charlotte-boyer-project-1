@@ -15,11 +15,12 @@
 <body>
         <header class="headerNav">
             <nav class="contactNav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
+                <button><i class="fas fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="./../index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h1>Get In Touch</h1>
@@ -29,13 +30,13 @@
                 <aside>
                     <div class="leftSideContact">
                         <div class="contactIcons">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         </div>
                         <ul>
-                            <li>info@email.com</li>
+                            <li><a href="mailto:info@email.com">info@email.com</a></li>
                             <li>123-456-7890</li>
                             <li>123 Queen St West, Unit 10</li>
                             <li>Toronto, Ontario</li>
@@ -47,12 +48,12 @@
                     <div class="firstRow contactFirstRow">
                         <div class="labelContainers">
                             <div class="labelContainer1">
-                                <label for="text">Name</label>
-                                <input type="text">
+                                <label for="text" class="sr-only">Name</label>
+                                <input type="text" placeholder="Name">
                             </div>
                             <div class="labelContainer2">
-                                <label for="email">Email address</label>
-                                <input type="email">
+                                <label for="email" class="sr-only">Email address</label>
+                                <input type="email" placeholder="Email Address">
                             </div>
                         </div>
                     </div>

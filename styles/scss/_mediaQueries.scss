@@ -2,18 +2,191 @@
 @import 'mixins';
 @import 'setup';
 
+@media (max-width: 1007px) {
+    .about h2 {
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 940px) {
+    
+    //index//
 
+    .indexHeader {
+        height: 75vh;
+        h1 {
+            font-size: 5.9rem;
+        }
+    }
 
+    .floatingPhoto {
+    top: 60%;
+
+}
+
+    //four icons//
+
+    .about {
+        flex-direction: column;
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .aboutPoints {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .locationWords, .communityWords {
+    padding-bottom: 0;
+}
+
+    //four columns//
+    .foodColumns {
+        flex-direction: column;
+        
+    }
+
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    //nature spaces//
+
+    .nature {
+        h2 {
+            font-size: 3.5rem;
+            line-height: 45px;
+        }
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    //blog 
+    
+    .employment {
+        h2 {
+            font-size: 2.5rem;
+            line-height: 40px;
+        }
+        p {
+            font-size: 1.8rem;
+        }
+        
+    }
     //contact//
-
 
 }
 
 
-@media(max-width:768px) {
 
-    //blog 
+@media(max-width:768px) {
+    
+    //all nav hamburger menu//
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav button {
+        display: block;
+    }
+
+    header nav:hover .menu{
+        height: auto;
+    }
+
+    header li:hover {
+        background-color: $sunflowerYellow;
+    }
+
+    .blogNav ul {
+        width: auto;
+    }
+
+    //header//
+    .floatingPhoto {
+    top: 100%;
+}
+
+    //gift Card//
+
+    .giftCard {
+        margin: 0 auto;
+    }
+
+    .giftCard h2 {
+        font-size: 3.5rem;
+    }
+
+    //nature//
+
+    .nature {
+        flex-direction: column;
+        margin: 0 auto;
+        h2 {
+            padding: 50px 0 25px 0; 
+        }
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    .natureImageContainer {
+        width: 60%;
+    }
+
+    .natureImage {
+    width: 80%;
+    box-shadow: -15px 15px  $sunflowerYellow;
+}
+
+    //gallery//
+
+    .gallery {
+        flex-direction: column;
+        div {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .galleryImage {
+        margin-bottom: 50px;
+    }
+
+    .galleryImage img {
+        width: 100%;
+    }
+
+
+    //blog//
+
+    .blogMain {
+    flex-direction: column-reverse;
+}   
+    .rightColumn, .leftColumn {
+        width: 90%;
+        margin: 0 auto;
+    }
 
 
     //form stylings//
@@ -52,24 +225,72 @@
 
     .leftSideContact {
         padding: 0; 
-         ul {
-             text-align: center;
-         }
+        ul {
+            text-align: center;
+        }
     }
 
     .contactIcons {
         text-align: center;
+        margin-top: 10%;
     }
 
     .contactForm {
-        top:-50px; 
+        top:-25px; 
         width: 90%;
+    }
+
+    .contactWords {
+        padding-bottom: 50px; 
     }
 }
 
 @media(max-width: 480px) {
 
+    
+    
+    // index//
 
+    .indexHeader h1 {
+        font-size: 4.9rem;
+        padding-top: 15%;
+    }
+
+    .floatingPhoto {
+    top: 90%;
+    width: 75%;
+
+}   
+    //index - about// 
+
+    .aboutPoints {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 2rem;
+        width: 25px;
+        height: 25px;
+        padding: 25px;
+    }
+
+    //food columns//
+
+    .burgerText {
+        padding: 0 0 10% 0;
+        margin: 0 0 10% 0;
+    }
+
+    //gift Card//
+    .giftCard {
+        h2 {
+            margin-top: 25%;
+            padding-bottom: 25px;
+            line-height: 35px;
+        }
+    }
 
     //contact// 
     
@@ -81,6 +302,4 @@
         box-shadow: none;
     }
 
-
 }
-
