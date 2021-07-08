@@ -479,10 +479,6 @@ html {
   background-size: cover;
   padding-left: 5%;
 }
-.indexHeader li {
-  margin: 0 30px 0 0;
-  padding: 0;
-}
 
 span.restaurant {
   background-color: white;
@@ -1352,9 +1348,6 @@ html {
 .blogHeader h1 {
   margin-top: 5%;
 }
-.blogHeader nav {
-  max-width: 30%;
-}
 
 .blogMain {
   display: -webkit-box;
@@ -1984,8 +1977,22 @@ html {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 0;
-    overflow: hidden;
+  }
+
+  .menu {
+    background-color: #2B331B;
+    position: fixed;
+    width: 100px;
+    padding: 0 20px 0 5px;
+    z-index: 100;
+    margin-top: 50px;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+
+  .showMenu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   header nav ul li {
@@ -1995,10 +2002,6 @@ html {
 
   header nav button {
     display: block;
-  }
-
-  header nav:hover .menu {
-    height: auto;
   }
 
   header li:hover {

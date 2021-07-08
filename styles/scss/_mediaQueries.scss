@@ -97,12 +97,27 @@
     header nav ul {
         flex-direction: column;
         align-items: flex-start;
-        height: 0;
-        overflow: hidden;
+        // height: 0;
+        // overflow: hidden;
+    }
+
+    .menu {
+        background-color: $pine;
+        position: fixed;
+        width: 100px;
+        padding: 0 20px 0 5px;
+        z-index: 100;
+        margin-top: 50px;
+        transform: translateY(-200%);
+        // transition: transform 0.2s;
+    }
+
+    .showMenu {
+        transform: translateY(0);
     }
 
     header nav ul li {
-        padding: 0;
+        padding: 0; 
         margin: 0;
     }
 
@@ -110,9 +125,9 @@
         display: block;
     }
 
-    header nav:hover .menu{
-        height: auto;
-    }
+    // header nav:hover .menu{
+    //     height: auto;
+    // }
 
     header li:hover {
         background-color: $sunflowerYellow;
