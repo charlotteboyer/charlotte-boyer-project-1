@@ -1,3 +1,4 @@
+// credit to https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -  for tutorial 
 //PsEuDo CoDe
 //1. display a hamburger icon that users can click in mobile view to see the menu
 //2. when icon is clicked menu appears 
